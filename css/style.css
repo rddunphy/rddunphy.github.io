@@ -1,35 +1,71 @@
 .jumbotron {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  margin-bottom: 0;
-  background-color: #fff;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 0;
+    background-color: #fff;
 }
 @media (min-width: 768px) {
-  .jumbotron {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
+    .jumbotron {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
 }
 
 .jumbotron p:last-child {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .jumbotron h1 {
-  font-weight: 300;
+    font-weight: 300;
 }
 
 .jumbotron .container {
-  max-width: 40rem;
+    max-width: 40rem;
+}
+
+.overlay-container {
+    position: relative;
+}
+
+.overlay-img {
+    transition: 0.2s;
+}
+
+.overlay-container:hover .overlay-img {
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: xx-large;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+.overlay-text a, a:hover {
+    color: var(--dark);
+    text-decoration: none;
+    text-shadow: 0.02rem .04rem .07rem rgba(255, 255, 255, .5);
+}
+
+.overlay-container:hover .overlay-text {
+    opacity: 100%;
 }
 
 footer {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  opacity: 0.7;
-  font-size: small;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    opacity: 0.7;
+    font-size: small;
 }
 
 footer p {
-  margin-bottom: .25rem;
+    margin-bottom: .25rem;
 }

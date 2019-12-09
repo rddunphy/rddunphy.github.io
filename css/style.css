@@ -58,8 +58,11 @@
         text-shadow: 0.02rem .04rem .07rem rgba(255, 255, 255, .5);
     }
 
-    .overlay-container:hover .overlay-text {
+    .overlay-text{
         display: block;
+    }
+
+    .overlay-container:hover .overlay-text {
         opacity: 100%;
     }
 }
